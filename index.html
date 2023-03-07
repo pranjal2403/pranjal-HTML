@@ -25,6 +25,7 @@
     <!--Create a Form Element-->
     <!--Add a Submit Button to a Form-->
     <!--Use HTML5 to Require a Field-->
+    <!--Create a Set of Radio Buttons-->
     <main>
       <p>Click here to view more <a href="#">cat photos</a>.</p>
 
@@ -47,8 +48,14 @@
         <li>other cats</li>
       </ol>
       <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-        <input type="text" placeholder="cat photo URL" required>
-        <button type="submit">submit</button>
+        <button type="submit">Submit</button>
+        <label for="indoor">
+          <input id="indoor" type="radio" name="indoor-outdoor" />Indoor</label
+        >
+        <label for="outdoor">
+          <input id="indoor" type="radio" name="indoor-outdoor" />Outdoor</label
+        >
+        <input type="text" placeholder="cat photo URL" required />
       </form>
     </main>
   </body>
