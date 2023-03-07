@@ -27,6 +27,7 @@
     <!--Use HTML5 to Require a Field-->
     <!--Create a Set of Radio Buttons-->
     <!--Create a Set of Checkboxes-->
+    <!--Use the value attribute with Radio Buttons and Checkboxes-->
     <main>
       <p>Click here to view more <a href="#">cat photos</a>.</p>
 
@@ -50,25 +51,45 @@
       </ol>
       <form action="https://www.freecatphotoapp.com/submit-cat-photo">
         <label for="indoor"
-          ><input id="indoor" type="radio" name="indoor-outdoor" />
+          ><input
+            id="indoor"
+            value="indoor"
+            type="radio"
+            name="indoor-outdoor"
+          />
           Indoor</label
         >
         <label for="outdoor"
-          ><input id="outdoor" type="radio" name="indoor-outdoor" />
+          ><input
+            id="outdoor"
+            value="outdoor"
+            type="radio"
+            name="indoor-outdoor"
+          />
           Outdoor</label
         ><br />
         <label for="loving"
-          ><input id="loving" type="checkbox" name="personality" />
+          ><input
+            id="loving"
+            value="loving"
+            type="checkbox"
+            name="personality"
+          />
           Loving</label
         >
-        <label for="charming"
-          ><input id="loving" type="checkbox" name="personality" />
-          Charming</label
+        <label for="lazy"
+          ><input id="lazy" value="lazy" type="checkbox" name="personality" />
+          Lazy</label
         >
-        <label for="mature"
-          ><input id="loving" type="checkbox" name="personality" />
-          Mature</label
-        >
+        <label for="energetic"
+          ><input
+            id="energetic"
+            value="energetic"
+            type="checkbox"
+            name="personality"
+          />
+          Energetic</label
+        ><br />
         <input type="text" placeholder="cat photo URL" required />
         <button type="submit">Submit</button>
       </form>
